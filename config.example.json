@@ -1,0 +1,48 @@
+{
+  "bot_token": "YOUR_BOT_TOKEN_HERE",
+  "admin_id": 12345678,
+  "server_remark": "My VPS Server",
+  "ban_threshold": 5,
+  "cpu_limit": 90,
+  "ram_limit": 90,
+  "daily_report_times": [
+    "08:00",
+    "20:00"
+  ],
+  "traffic_limit_gb": 1024,
+  "billing_day": 1,
+  "daily_warn_gb": 50,
+  "last_daily_warn_date": "",
+  "traffic_offset_gb": 0.0,
+  "backup_paths": [
+    "/path/to/backup/directory"
+  ],
+  "backup_exclude": [
+    "*.log",
+    "*.tmp",
+    "__pycache__",
+    "cache"
+  ],
+  "auto_backup": {
+    "mode": "daily",
+    "time": "23:55",
+    "last_run": ""
+  },
+  "last_report_2000": "",
+  "last_report_0800": "",
+  "traffic_daily_report": true,
+  "ban_duration": "5m",
+  "ports": {
+    "22": {
+      "desc": "SSH"
+    },
+    "80": {
+      "desc": "HTTP"
+    },
+    "443": {
+      "desc": "HTTPS"
+    }
+  },
+  "last_traffic_report_date": "",
+  "command_prefix": "kk"
+}

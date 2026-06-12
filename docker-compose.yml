@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  vps-bot:
+    build: .
+    image: telegram-vps-remote:latest
+    container_name: vps-bot
+    restart: always
+    privileged: true
+    volumes:
+      - ./config.json:/app/config.json
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/lib/vps_bot:/var/lib/vps_bot
+    environment:
+      - TZ=Asia/Shanghai
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
